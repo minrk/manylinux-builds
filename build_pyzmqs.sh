@@ -23,7 +23,7 @@ export ZMQ_PREFIX=$BUILD_PREFIX
 export LIBZMQ_URL=${LIBZMQ_URL:-https://github.com/zeromq/libzmq/releases/download/v${ZMQ_VERSION}}
 
 # Build libsodium
-build_simple libsodium ${LIBSODIUM_VERSION} https://github.com/jedisct1/libsodium/releases/download/${LIBSODIUM_VERSION} tar.gz
+build_simple libsodium ${LIBSODIUM_VERSION} https://github.com/jedisct1/libsodium/releases/download/${LIBSODIUM_VERSION}-RELEASE tar.gz
 
 # Build zmq
 build_simple zeromq ${ZMQ_VERSION} ${LIBZMQ_URL} tar.gz --with-libsodium
